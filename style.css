@@ -1,0 +1,194 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e3f2ff, #fdfbff);
+  min-height: 100vh;
+}
+
+/* Page container */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* White card */
+.auth-card {
+  background: #ffffff;
+  width: 380px;
+  max-width: 100%;
+  border-radius: 24px;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+/* Logo / icon area */
+.logo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-square {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  background: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-tick {
+  colour: #ffffff;
+  font-size: 1.4rem;
+}
+
+.logo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #facc15;
+  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.3);
+}
+
+/* Heading and subtitle */
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  colour: #111827;
+  margin-bottom: 0.3rem;
+}
+
+.auth-subtitle {
+  font-size: 0.95rem;
+  colour: #6b7280;
+  margin-bottom: 1.4rem;
+}
+
+/* Tabs */
+.auth-tabs {
+  display: inline-flex;
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 0.15rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1.3rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  colour: #6b7280;
+  cursor: pointer;
+  transition: background 0.15s ease, colour 0.15s ease;
+}
+
+.tab-button.active {
+  background: #ffffff;
+  colour: #111827;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+/* Form styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.field-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  colour: #4b5563;
+}
+
+.field-wrapper {
+  display: flex;
+  align-items: centre;
+  gap: 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 0.9rem;
+  background: #f9fafb;
+}
+
+.field-icon {
+  font-size: 1rem;
+}
+
+.field-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 0.9rem;
+  colour: #111827;
+}
+
+/* Footer with Help + Next Step buttons */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+  margin-top: 0.6rem;
+}
+
+.help-button {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
+  colour: #374151;
+  cursor: pointer;
+}
+
+.primary-button {
+  border-radius: 999px;
+  border: none;
+  padding: 0.55rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  colour: #ffffff;
+  background: linear-gradient(135deg, #8d5b04, #fbbf24);
+  box-shadow: 0 8px 16px rgba(26, 25, 24, 0.4);
+  cursor: pointer;
+}
+
+/* Terms text */
+.terms-text {
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  colour: #9ca3af;
+  line-height: 1.3;
+}
+
+.terms-text a {
+  colour: #2563eb;
+  text-decoration: none;
+}
+
+/* Small screens */
+@media (max-width: 420px) {
+  .auth-card {
+    padding: 1.6rem 1.4rem;
+    border-radius: 20px;
+  }
+}
